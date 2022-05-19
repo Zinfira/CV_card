@@ -1,3 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Inter', sans-serif;
+  background-color: #1E1E1E;
+  color: #FFFFFF;
+}
+
+html, body {
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+} 
+
+.column {
+  flex: 30%;
+  flex-direction: column;
+}
+
+.column-1-content {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.column-1-content__info {
+  width: 50%;
+}
+
+.info-images {
+  size: 30px 30px;
 }
