@@ -59,12 +59,17 @@ h1 {
 
 h2 {
   margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 25px;
+  opacity: 0.9;
 }
 
 p {
   font-weight: 500;
   font-size: 15px;
   line-height: 25px;
+  opacity: 0.8;
 }
 
 .tech-bar__text {
@@ -102,4 +107,28 @@ p {
 
 .internet::before, .shopping::before {
   width: 50%;
+}
+
+.column-2__text {
+  margin-bottom: 50px;
+}
+
+.column-2__lists {
+  margin-bottom: 45px;
+  /* padding-left: 14px; */
+  /* text-indent: 0%; */
+  /* list-style-position: inside; */
+  list-style-type: none;
+  opacity: 0.8;
+}
+
+.column-2__lists > .column-2__list {
+  position: relative;
+  padding-left: 12px;
+}
+
+.column-2__lists > .column-2__list::before {
+  content: "•";
+  position: absolute;
+  left: 0;
 }
