@@ -11,6 +11,7 @@ body {
 
 html, body {
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -154,7 +155,7 @@ p {
   font-weight: 600;
   font-size: 30px;
   line-height: 35px;
-  padding-left: 50px;
+  padding-left: 47px;
   padding-right: 50px;
 }
 
@@ -190,7 +191,7 @@ p {
 }
 
 @media (max-width: 1206px) {
-  .column-3 img{
+  .column-3__image{
     width: 350px;
   }
 
@@ -207,7 +208,7 @@ p {
   h1 {
     font-size: 50px;
   }
-  .column-3 img{
+  .column-3__image {
     width: 250px;
     height: 600px;
   }
@@ -230,27 +231,33 @@ p {
   .column-2__lists {
     margin-bottom: 40px;
   }
-  .column-3 img{
+  .column-3__image {
     width: inherit;
     height: auto;
     display: block;
     margin: 20px auto;
   }
   .column-3__quote-text {
-    text-align: center;
-    left: calc(50% - 230px);
-    right: calc(50% - 230px);
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 0;
+  }
+  .column-3__quote-text::before {
+    left: -10px;
   }
 }
 
 @media (max-width: 550px) {
-  .column-3 img {
+  .column-3__image {
     width: 100%;
   }
   .column-3__quote-text {
-    width: 100%;
-  }
-  .column-3__quote-text::before {
-    left: 62px;
+    bottom: 50px;
+  } 
+}
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: 50px;
   }
 }
